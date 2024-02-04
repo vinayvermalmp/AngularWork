@@ -10,6 +10,8 @@ import { ShoppingListComponent } from './shopping-list/shopping-list.component';
 import { ShoppingEditComponent } from './shopping-list/shopping-edit/shopping-edit.component';
 import { BasicHighlightDirective } from './directives/basic-highlight.directive';
 import { UnlessDirective } from './directives/unless.directive';
+import { UserFormComponent } from './user-form/user-form.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -21,10 +23,12 @@ import { UnlessDirective } from './directives/unless.directive';
     ShoppingListComponent,
     ShoppingEditComponent,
     BasicHighlightDirective,
-    UnlessDirective
+    UnlessDirective,
+    UserFormComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
