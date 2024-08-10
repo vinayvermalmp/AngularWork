@@ -11,7 +11,6 @@ export class UserFormComponent {
   selectedSubscription = 'Advanced';
   @ViewChild('userForm') usrForm: NgForm
 
-
   onSubmit(){
     console.log(this.usrForm.value)
   }
